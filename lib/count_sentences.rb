@@ -24,4 +24,5 @@ class String
       end
     end
   end
+  counter
 end
