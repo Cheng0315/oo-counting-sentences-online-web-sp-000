@@ -15,7 +15,13 @@ class String
   end
 
   def count_sentences
-    str_arr = self.split(".")
-    str_arr.length
+    counter = 0
+    self.each do |char, idx|
+      if char == "." || char == "?" || char == "!"
+        if char[idx - 1] != char
+          counter += 1
+        end
+      end
+    end
   end
 end
