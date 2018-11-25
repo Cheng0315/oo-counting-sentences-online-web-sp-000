@@ -11,10 +11,11 @@ class String
   end
 
   def exclamation?
-
+    self[-1] == "!"
   end
 
   def count_sentences
-
+    str_arr = self.split(".")
+    str_arr.length
   end
 end
