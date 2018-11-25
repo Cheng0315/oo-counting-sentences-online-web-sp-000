@@ -23,6 +23,6 @@ class String
         end
       end
     end
+    counter
   end
-  counter
 end
