@@ -18,7 +18,7 @@ class String
     counter = 0
     self.each do |char, idx|
       if char == "." || char == "?" || char == "!"
-        if char[idx - 1] != char
+        if char[idx - 1] != char && idx != 0
           counter += 1
         end
       end
